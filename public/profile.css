@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.signInBtn {
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #6e56e6;
+    color: #6e56e6;
+    text-decoration: none;
+}
+
+.signInBtn:hover {
+    background-color: #F3F5F7;
+}
+
+.searchContainerBg {
+    background-image: url('./Continuous-Pattern-Repeat-1024x731.jpg');
+}
+
+.item-gutter {
+    margin-right: -18px;
+}
+
+.item-gutter * {
+    font-size: 14px;
+}
+
+.registerTxt {
+    border-bottom: 2px solid black;
+    color: black;
+    border-radius: none;
+    text-decoration: none;
+    margin: 0rem 1rem;
+    padding-bottom: 3px;
+}
+
+.dullBG {
+    background-color: #F3F5F7;
+}
+
+.userCard {
+    margin: 0.75rem 0;
+    padding: 1rem 2rem;
+    border: 2px solid #F3F5F7 !important;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.userCard .userName span {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+}
+
+.userCard p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.userCard ul {
+    margin-top: -1rem;
+    padding: 0 1rem;
+}
+
+.userCard ul li {
+    font-size: 14px;
+    font-weight: 300;
+    list-style-type: none;
+    margin-top: -0.3rem;
+}
+
+.userCard ul li:before {
+    content: '\2022';
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+.fontStyles li {
+    font-size: 14px;
+}
+
+.bio {
+    font-size: 14px !important;
+}
+
+.fontStyles h5 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.searchBtn {
+    background-color: #E60278;
+    border: 0;
+    border-radius: 5px;
+    padding: 0 1rem;
+    height: 100%;
+    color: white;
+}
+
+.searchBtn:hover {
+    background-color: #f80281;
+
+}
+
+.footerContainer {
+    background-color: #F3F5F7;
+}
+
+.itemsContainer {
+    margin-bottom: 1.25rem;
+}
+
+.itemRow {
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0;
+}
+
+.itemRow img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.itemRow span {
+    margin-left: 0.5rem;
+    font-size: 15px;
+}
+
+.profilePopUpOpen {
+    height: 100%;
+    overflow: auto;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.profilePopUpClose {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.profilePopupCrossIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#profileSectionPopUp {
+    min-height: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 991px) {
+    .profilePopUpOpen {
+        width: 100%;
+    }
+
+    .profilePopUpClose {
+        width: 100%;
+        right: -100%;
+    }
+}

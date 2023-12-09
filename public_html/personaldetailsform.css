@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.fontStyles li {
+    font-size: 14px;
+}
+
+.fontStyles h5 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.footerContainer {
+    background-color: #F3F5F7;
+}
+
+.loginFormContainer {
+    background-color: #fdfcfc;
+    border: none;
+}
+
+.loginForm * {
+    font-size: 14px;
+}
+
+.loginForm p {
+    margin: 0;
+}
+
+.loginForm .labelText {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.loginForm input {
+    padding: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.loginForm button {
+    padding: 0.6rem;
+    margin: 0;
+    background-color: transparent;
+    border: 2px solid #E60278;
+    color: #E60278;
+}
+
+.googleBtn {
+    padding: 0.6rem;
+    margin: 0;
+}
+
+.loginForm button:hover {
+    background-color: #E60278;
+    border: 2px solid #E60278;
+    color: white;
+}
+
+.primaryBtnStyles {
+    text-decoration: none;
+    background-color: #E60278;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0.6rem;
+    /* padding: 0.5rem 1.75rem; */
+    height: 43px;
+    color: white;
+}
+
+.primaryBtnStyles:hover {
+    background-color: #f80281;
+}
+
+#skillsList {
+    margin-top: -1.5rem;
+}
+
+.skillItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: #F8F9FA;
+    margin: 5px 0 !important;
+}
+
+.skillItem img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#addSkill:disabled {
+    opacity: 0.4;
+    background-color: #f80281;
+    color: white;
+    cursor: not-allowed;
+}
+
+#personalDetailsSectionPopUp {
+    min-height: 100%;
+    background-color: white;
+    padding: 0 1rem;
+}
+
+.personalDetailsSectionPopUpOpen {
+    width: 50%;
+    /* max-height: fit-content; */
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.personalDetailsSectionPopUpClose {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.closePersonalDetailsSectionPopUp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 991px) {
+    .personalDetailsSectionPopUpOpen {
+        width: 100%;
+    }
+
+    .personalDetailsSectionPopUpClose {
+        width: 100%;
+        right: -100%;
+    }
+}
